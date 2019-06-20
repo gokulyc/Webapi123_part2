@@ -29,7 +29,7 @@ namespace Webapi123_part2
             );
             EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(cors);
-            config.Formatters.Clear();
+            //config.Formatters.Clear();
             GlobalConfiguration.Configuration.Formatters.Add(new JsonMediaTypeFormatter());
 
         }

@@ -8,6 +8,7 @@ using Webapi123_part2.Models;
 
 namespace Webapi123_part2.Controllers
 {
+    [Authorize]
     public class EmployeesController : ApiController
     {
         public IHttpActionResult Get()
